@@ -54,7 +54,15 @@ loadBalancing:
     factory: {class: "com.hotels.styx.client.loadbalancing.strategies.PowerOfTwoStrategy$Factory"}
 
 services:
-  factories: {}
+  factories:
+    graphite:
+      enabled: true
+      class: "com.hotels.styx.metrics.reporting.graphite.GraphiteReporterServiceFactory"
+      config:
+        prefix: "styx"
+        host: "graphite"
+        port: 2003
+        intervalMillis: 2500
 
 routingObjects:
   root:

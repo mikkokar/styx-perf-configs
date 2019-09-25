@@ -52,7 +52,7 @@ services:
       enabled: true
       class: "com.hotels.styx.metrics.reporting.graphite.GraphiteReporterServiceFactory"
       config:
-        prefix: "styx-loadtest"
+        prefix: "styx"
         host: "graphite"
         port: 2003
         intervalMillis: 2500
