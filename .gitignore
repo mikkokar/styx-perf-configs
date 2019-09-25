@@ -1,0 +1,12 @@
+# Intellij
+*.ipr
+*.iml
+*.iws
+.idea/
+.idea_modules/
+
+# Other
+**/*.pyc
+**/*.out
+**/*.jtl
+**/*.log
