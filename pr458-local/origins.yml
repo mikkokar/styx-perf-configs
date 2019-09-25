@@ -1,0 +1,12 @@
+---
+- id: "stub"
+  path: "/"
+  connectionPool:
+    maxConnectionsPerHost: 2450
+    maxPendingConnectionsPerHost: 2150
+    connectTimeoutMillis: 1000
+    pendingConnectionTimeoutMillis: 8000
+  responseTimeoutMillis: 60000
+  origins:  
+   - { id: "origin00", host: "localhost:9091" }
+   - { id: "origin01", host: "localhost:9092" }
